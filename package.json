@@ -11,6 +11,7 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
+    "lint:typings": "tsc",
     "start": "next start"
   },
   "devDependencies": {

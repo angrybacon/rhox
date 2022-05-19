@@ -1,5 +1,5 @@
 import type { FunctionComponent, ReactNode } from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import { Footer } from '@/components/Footer/Footer';
 import { Header } from '@/components/Header/Header';
 
@@ -10,7 +10,9 @@ interface Props {
 export const Layout: FunctionComponent<Props> = ({ children }) => (
   <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
     <Header />
-    {children}
-    <Footer sx={{ mt: 'auto' }} />
+    <Container component="main" maxWidth="lg" sx={{ my: 4 }}>
+      {children}
+    </Container>
+    <Footer sx={{ mb: 2, mt: 'auto' }} />
   </Box>
 );
