@@ -12,7 +12,7 @@ export const Footer: FunctionComponent<Props> = ({ sx }) => (
     component="footer"
     sx={{ display: 'flex', justifyContent: 'center', ...sx }}
   >
-    <Typography color="textSecondary" variant="caption">
+    <Typography color="text.secondary" variant="caption">
       Copyright &copy; 2022 Rhox contributors. Read the notice about{' '}
       <Link href="/license">licenses and resources</Link>.
     </Typography>

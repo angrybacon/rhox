@@ -10,9 +10,9 @@ interface Props {
 export const Layout: FunctionComponent<Props> = ({ children }) => (
   <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
     <Header />
-    <Container component="main" maxWidth="lg" sx={{ my: 4 }}>
+    <Container component="main" maxWidth="lg" sx={{ my: 3 }}>
       {children}
     </Container>
-    <Footer sx={{ mb: 2, mt: 'auto' }} />
+    <Footer sx={{ mb: 3, mt: 'auto' }} />
   </Box>
 );

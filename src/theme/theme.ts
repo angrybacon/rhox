@@ -1,3 +1,4 @@
+import { grey } from '@mui/material/colors';
 import { Theme, createTheme } from '@mui/material/styles';
 
 const base: Theme = createTheme();
@@ -11,6 +12,10 @@ export const theme: Theme = createTheme({
     },
     MuiCssBaseline: {
       styleOverrides: {
+        '@font-face': {
+          fontFamily: 'GoudyMedieval',
+          src: `local("GoudyMedieval"), url("fonts/goudy-medieval.ttf") format("truetype")`,
+        },
         p: { marginTop: 0, '&:last-child': { marginBottom: 0 } },
       },
     },
@@ -21,6 +26,7 @@ export const theme: Theme = createTheme({
     },
   },
   palette: {
+    background: { default: grey[50] },
     mode: 'light',
   },
 });

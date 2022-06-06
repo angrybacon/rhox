@@ -1,0 +1,16 @@
+export enum Frame {
+  ARTIFACT = 'frames/artifact.png',
+  BACK = 'frames/back.png',
+  BLACK = 'frames/black.png',
+  BLUE = 'frames/blue.png',
+  GOLD = 'frames/gold.png',
+  GREEN = 'frames/green.png',
+  LAND_BLACK = 'frames/landblack.png',
+  LAND_BLUE = 'frames/landblue.png',
+  LAND_COLORLESS = 'frames/landcolorless.png',
+  LAND_GREEN = 'frames/landgreen.png',
+  LAND_RED = 'frames/landred.png',
+  LAND_WHITE = 'frames/landwhite.png',
+  RED = 'frames/red.png',
+  WHITE = 'frames/white.png',
+}
